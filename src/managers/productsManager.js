@@ -51,5 +51,6 @@ export default class ProductsManager {
 		const products = await this._readFile();
 		const updatedProducts = products.filter((p) => p.id !== id);
 		await this._writeFile(updatedProducts);
+		return updatedProducts;
 	}
 }

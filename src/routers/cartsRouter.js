@@ -3,7 +3,7 @@ import CartsManager from "../managers/cartsManager.js";
 
 const router = Router();
 
-// La ruta debe escribirse como si se ejecutara el programa desde main.js
+// Ruta absoluta al archivo json
 const cartsManager = new CartsManager("./src/data/carts.json");
 
 router.post("/", async (req, res) => {

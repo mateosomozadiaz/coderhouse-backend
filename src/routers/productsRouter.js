@@ -3,7 +3,7 @@ import ProductsManager from "../managers/productsManager.js";
 
 const router = Router();
 
-// La ruta debe escribirse como si se ejecutara el programa desde main.js
+// Ruta absoluta al archivo json
 const productsManager = new ProductsManager("./src/data/products.json");
 
 router.get("/", async (req, res) => {

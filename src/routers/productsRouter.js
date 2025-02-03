@@ -4,7 +4,7 @@ import ProductsManager from "../managers/productsManager.js";
 const router = Router();
 
 // La ruta debe escribirse como si se ejecutara el programa desde main.js
-const productsManager = new ProductsManager("./data/products.json");
+const productsManager = new ProductsManager("./src/data/products.json");
 
 router.get("/", async (req, res) => {
 	const products = await productsManager.getProducts();

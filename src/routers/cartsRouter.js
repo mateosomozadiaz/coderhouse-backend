@@ -4,7 +4,7 @@ import CartsManager from "../managers/cartsManager.js";
 const router = Router();
 
 // La ruta debe escribirse como si se ejecutara el programa desde main.js
-const cartsManager = new CartsManager("./data/carts.json");
+const cartsManager = new CartsManager("./src/data/carts.json");
 
 router.post("/", async (req, res) => {
 	const cart = await cartsManager.createCart();
